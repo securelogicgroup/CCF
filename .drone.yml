@@ -1,0 +1,23 @@
+kind: pipeline
+name: default
+
+steps:
+
+  - name: docker image - trustexec-node (v0.10)
+    image: plugins/docker
+    settings:
+      username: "f0d25a8c-a127-4a9a-a43c-35af4f33925a"
+      password: "YtJ7h-~2bzH-LKmeuTvYguOljqZZ_-bx8Z"
+      repo: trustgridstaging.azurecr.io/trustgrid/ccf-app-ci
+      registry: trustgridstaging.azurecr.io
+      dockerfile: docker/app_ci
+      autotag: true
+      tags:
+        - '0.10'
+      when:
+        branch:
+          - support-v0.10
+        event:
+          - push
+
+
