@@ -2,7 +2,6 @@ kind: pipeline
 name: default
 
 steps:
-
   - name: docker image - trustexec-node (v0.11)
     image: plugins/docker
     settings:
