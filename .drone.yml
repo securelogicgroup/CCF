@@ -12,7 +12,6 @@ steps:
         from_secret: docker_password
       repo: trustgridstaging.azurecr.io/trustgrid/ccf-app-ci
       registry: trustgridstaging.azurecr.io
-      dockerfile: docker/app_ci
       autotag: true
       tags:
         - '0.10'
