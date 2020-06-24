@@ -5,7 +5,7 @@ RUN echo "APT::Acquire::Retries \"5\";" | tee /etc/apt/apt.conf.d/80-retries
 # Work-around for https://github.com/intel/linux-sgx/issues/395
 RUN mkdir -p /etc/init
 
-ARG VERSION=0.10.0
+ARG VERSION=0.10
 
 RUN mkdir -p /opt/ccf/ccf-$VERSION
 
