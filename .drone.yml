@@ -3,7 +3,7 @@ name: default
 
 steps:
 
-  - name: docker image - trustexec-node
+  - name: docker image - trustexec-node (v0.11)
     image: plugins/docker
     settings:
       username: "f0d25a8c-a127-4a9a-a43c-35af4f33925a"
